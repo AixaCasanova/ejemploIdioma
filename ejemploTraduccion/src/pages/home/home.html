@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Idioma:
+      <select [(ngModel)]="idi" (change)="evento()">
+        <option *ngFor="let id of comboidioma">
+          {{id}}
+        </option>
+      </select> 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>{{titulo}}</h2>
+  <p>
+   {{texto}}
+  </p>
+  
+  <button ion-button (click)="miboton()"> {{boton}} </button>
+</ion-content>
